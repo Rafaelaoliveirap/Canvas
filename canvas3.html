@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        canvas{
+            border: 2px solid cornflowerblue;
+            background-color: rgba(111, 79, 226, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <canvas width="280" height="280" id="circulo"></canvas>
+   
+    <script>
+        var pincel = document.getElementById("circulo")
+        if(pincel.getContext){
+            var pincel = circulo.getContext("2d")
+
+            pincel.beginPath()            
+            pincel.FillStyle= "yellow"
+            pincel.arc(100,100,40,Math.PI/180*45,Math.PI/180*315)
+            pincel.stroke()
+        }
+        
+        else{
+            alert("Não suportado pelo navegador")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 1px solid cornflowerblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="600" height="600" id="desenho">
+    </canvas>
+
+    <script>
+        var pincel = document.getElementById("desenho")
+
+        if (pincel.getContext) {
+            var pincel = desenho.getContext("2d")
+
+            pincel.fillStyle= "rgba(0, 259, 197, 0.1)"
+            pincel.fillRect(30, 30, 200, 130)
+            
+        }
+        else {
+            alert("Não há suporte")
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            background-color: rgb(3, 4, 5);
+        }
+       
+    </style>
+</head>
+<body>
+    <canvas width="300" height="300" id="circulo"></canvas>
+    <script>
+        var pincel = document.getElementById("circulo")
+        
+        if(pincel.getContext){
+            var pincel = circulo.getContext ("2d")
+
+            
+            pincel.beginPath()
+            
+            pincel.arc(100,100,40, Math.PI/180*45, Math.PI/180*315)
+            // o 100,100 é o centro 
+            // desenhar uma linha do angulo  de 45º até o centro  
+            pincel.lineTo(100,100)
+            pincel.lineTo(129,129)
+            pincel.fillStyle = "rgb(225,225,0)"
+            pincel.fill()
+            pincel.stroke()
+            
+        }
+    </script>
+</body>
+</html>
